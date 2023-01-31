@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+
+        >
+
+        <TableLayout
+            android:id="@+id/tabla_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          >
+
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                >
+
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Emp id"
+                    android:textColor="@color/purple_500"
+
+                    >
+
+                </TextView>
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Emp code"
+                    android:textColor="@color/purple_500"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/three"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Emp name"
+                    android:textColor="@color/purple_500">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_500">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Mobile No"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_500">
+
+                </TextView>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:id="@+id/s_no"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#808080"
+                    >
+
+                </TextView>
+                <TextView
+                    android:id="@+id/emp_code"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#808080"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/emp_name"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#808080">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#808080">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#808080">
+
+                </TextView>
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

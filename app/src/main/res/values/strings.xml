@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Online_Attendance_IndtechSoft</string>
+    <string name="navigation_drawer_close" />
+    <string name="navigation_drawer_open" />
+    <string name="title_activity_lead_information">LeadInformationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="update"><u>update the status</u></string>
+    <string name="upload"><u>Upload</u></string>
+    <string name="invite"><u>Click to invite</u></string>
+    <string name="start"><u>Start time</u></string>
+    <string name="end"><u>End time</u></string>
+    <string name="press"><u>Press here to wind up the call</u></string>
+    <string-array name="property_category">
+        <item>Select Category</item>
+        <item>Gold</item>
+        <item>Diamond</item>
+        <item>Platinum</item>
+        <item>Ruby</item>
+    </string-array>
+
+    <string-array name="property_region">
+        <item>Select Location</item>
+        <item>Coimbatore</item>
+        <item>Tirussur</item>
+        <item>Chennai</item>
+        <item>Salem</item>
+    </string-array>
+</resources>

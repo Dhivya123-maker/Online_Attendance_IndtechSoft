@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/task_linearlayout">
+
+
+    <LinearLayout
+        android:id="@+id/taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_200"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/arrow_white">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_semibold"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Add New Lead"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/taskbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relate">
+
+            <LinearLayout
+                android:id="@+id/lnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lead Information"
+                    android:textColor="@color/purple_200"
+                    android:paddingTop="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="#E0FFFF"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info_lnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/lnr">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/nunito_semibold"/>
+
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/white_bg"
+                    android:elevation="2dp"
+                    android:hint="Enter First Name"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:textSize="14dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/error1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:text="first name field is required"
+                    android:textAlignment="textEnd"
+                    android:textColor="#E53935"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/white_bg"
+                    android:elevation="2dp"
+                    android:hint="Enter Last Name"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="14dp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/error2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:text="last name field is required"
+                    android:textAlignment="textEnd"
+                    android:textColor="#E53935"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <EditText
+                    android:id="@+id/mobile_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/white_bg"
+                    android:elevation="2dp"
+                    android:hint="Enter Mobile Number"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="14dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/error3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:text="mobile number field is required"
+                    android:textAlignment="textEnd"
+                    android:textColor="#E53935"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_semibold"/>
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/white_bg"
+                    android:elevation="2dp"
+                    android:hint="Enter Email"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="14dp">
+
+                </EditText>
+                <TextView
+                    android:id="@+id/error4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:text="email field is required"
+                    android:paddingTop="5dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="#E53935"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/info_lnr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Requirements"
+                    android:textColor="@color/purple_200"
+                    android:paddingTop="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="#E0FFFF"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="18dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_below="@id/lnr">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Property Category"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/nunito_semibold"/>
+
+
+                    <Spinner
+                        android:id="@+id/property_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_bg"
+                        android:elevation="2dp"
+                        android:paddingStart="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#808080"
+                        android:textSize="14dp">
+
+                    </Spinner>
+                    <TextView
+                        android:id="@+id/error5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="5dp"
+                        android:text="category field is required"
+                        android:textAlignment="textEnd"
+                        android:textColor="#E53935"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Property Region"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_semibold"/>
+                    <Spinner
+                        android:id="@+id/property_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_bg"
+                        android:elevation="2dp"
+                        android:paddingStart="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#808080"
+                        android:textSize="14dp">
+
+                    </Spinner>
+                    <TextView
+                        android:id="@+id/error6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="5dp"
+                        android:text="region field is required"
+                        android:textAlignment="textEnd"
+                        android:textColor="#E53935"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Budget"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_semibold"/>
+                    <EditText
+                        android:id="@+id/budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_bg"
+                        android:elevation="2dp"
+                        android:hint="Enter Budget"
+                        android:paddingStart="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#808080"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="14dp">
+
+                    </EditText>
+                    <TextView
+                        android:id="@+id/error7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="budget field is required"
+                        android:paddingTop="5dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="#E53935"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other Requirement "
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_semibold"/>
+                    <EditText
+                        android:id="@+id/other"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_bg"
+                        android:elevation="2dp"
+                        android:hint="Enter Requirement"
+                        android:paddingStart="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#808080"
+                        android:textSize="14dp">
+
+                    </EditText>
+                    <TextView
+                        android:id="@+id/error8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="other field is required"
+                        android:paddingTop="5dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="#E53935"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/blue_bg"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:letterSpacing="0.01"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

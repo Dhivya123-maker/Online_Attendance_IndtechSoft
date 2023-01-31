@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"
+        android:activatedBackgroundIndicator ="@drawable/drawer_selected_item"
+        />
+        <item android:id="@+id/master"
+            android:title="Master Setup"
+            android:icon="@drawable/setup"
+            />
+        <item android:id="@+id/property"
+            android:title="Property Setup"
+            android:icon="@drawable/property_setup"
+            />
+        <item android:id="@+id/Properties"
+            android:title="Properties"
+            android:icon="@drawable/property"
+            />
+        <item android:id="@+id/Branding"
+            android:title="Branding"
+            android:icon="@drawable/brand"
+            />
+        <item android:id="@+id/Employee"
+            android:title="Employee"
+            android:icon="@drawable/employee"
+            />
+        <item android:id="@+id/Lead"
+            android:title="Lead"
+            android:icon="@drawable/user"
+            />
+        <item android:id="@+id/Document"
+            android:title="Document"
+            android:icon="@drawable/documents"
+            />
+        <item android:id="@+id/Attendance"
+            android:title="Attendance"
+            android:icon="@drawable/attendance"
+            />
+        <item android:id="@+id/Report"
+            android:title="Report"
+            android:icon="@drawable/report"
+            />
+    </group>
+</menu>
